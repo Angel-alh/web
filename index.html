@@ -1,0 +1,233 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="familyCarpenter">
+            <p class="family">Family Carpenter</p>
+        </div>
+        <div class="nav">
+            <nav class="nav-list">
+                <a href="index.html" id="active"></i> Home</a>
+                <a href="about_us.html"></i>About Us</a>
+                <a href="signup.php"> Register</a>
+                <a href="service.html"> Services</a>
+                <a href="contact.html"> contact us</a>
+                <a href="login.php">Logout</a>
+            </nav>
+        </div>
+    </header>
+    <div class="head-section" id="header">
+        <h1 class="image-text1" id="typewriter">Welcome to Family Carpenter. </h1>
+           <button id="button1" >Change theme</button>
+        <img src="images/index.jpg" alt="" height="400px" width="100%">
+     
+    </div>
+    <div class="container reveal" id="home">
+        <!--<h1 style="color: #654321; text-align: center;">Welcome to Furniture Explorer</h1>-->
+        <p class="welcome-paragraph">Welcome to our website! We take pride in crafting and repairing quality furniture
+            designed to bring style and
+            comfort to your space. Explore our services, discover unique designs, and learn new skills through our
+            step-by-step tutorials. Your perfect furniture experience starts here.!</p>
+    </div>
+    <div class="slideshow reveal">
+        <div class="slideshow-container">
+            <div class="slides-wrapper" style="transform: translateX(-100%); transition: transform 0.8s linear;">
+                <div class="mySlides"><img style="width: 100%; height: 100%;" src="images/chair.png">
+                </div>
+                <div class="mySlides"><img style="width: 100%; height: 100%;" src="images/table.png">
+                </div>
+                <div class="mySlides"><img style="width: 100%; height: 100%;" src="images/cupboard.png">
+                </div>
+            </div>
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <div class="myservices reveal-">
+        <div class="service-image reveal-left"><img src="images/carpenter.jpg" style="width: 90%" height="100%"></div>
+
+        <div class="service-paragraph reveal-right">
+            <h2 class="heading">What we deal with</h2>
+            <p class="myparagraph">We specialize in custom furniture making, professional furniture repair, and
+                woodworking
+                tutorials designed to bring your furniture ideas to life and help you maintain timeless pieces with
+                expert
+                craftsmanship.</p>
+            <div style="padding-top: 3%;">
+                <a class="get-started-btn" href="about_us.html">
+                    Read More <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div class="testimony-why-section reveal">
+        <!-- Testimonials Section -->
+        <div class="testimony">
+            <h2>Testimonials</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"Family Carpenter crafted a custom dining set that perfectly fits our home. Beautiful
+                        workmanship!"</p>
+                    <h4>- Sarah M.</h4>
+                </div>
+                <!--    <div class="testimonial-card">
+        <p>"The repair service was fast and professional. My old cabinet looks brand new again!"</p>
+        <h4>- James K.</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Their tutorials helped me learn basic carpentry. Now I’ve built my first coffee table!"</p>
+        <h4>- Linda T.</h4>
+      </div>-->
+            </div>
+        </div>
+        <div class="vertical-separator"></div>
+        <!-- Why Choose Us Section -->
+        <div class="why-choose">
+            <h2>Why Choose Us</h2>
+            <ul class="reasons">
+                <li><i class="fa-solid fa-award"></i> Skilled and experienced craftsmen</li>
+                <li><i class="fa-solid fa-couch"></i> Custom-made, durable furniture</li>
+                <li><i class="fa-solid fa-wallet"></i> Affordable and transparent pricing</li>
+                <li><i class="fa-solid fa-headset"></i> Fast and reliable customer support</li>
+                <li><i class="fa-solid fa-chalkboard-user"></i> Hands-on tutorials and learning support</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <section class="faq-section reveal">
+        <h2 class="faq-title">People also ask</h2>
+
+        <div class="faq-container">
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <button class="faq-toggle">
+                    <span class="faq-question">What types of furniture do you offer?</span>
+                    <span class="faq-arrow"></span>
+                </button>
+                <div class="faq-content">
+                    We provide a wide range of furniture including sofas, dining sets, beds, wardrobes, and custom-made
+                    designs to suit your space.
+                </div>
+            </div>
+
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <button class="faq-toggle">
+                    <span class="faq-question">Do you provide delivery services?</span>
+                    <span class="faq-arrow"></span>
+                </button>
+                <div class="faq-content">
+                    Yes, we deliver furniture to your doorstep. Delivery time depends on your location and the size of
+                    the order.
+                </div>
+            </div>
+
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <button class="faq-toggle">
+                    <span class="faq-question">Can I request custom furniture?</span>
+                    <span class="faq-arrow"></span>
+                </button>
+                <div class="faq-content">
+                    Absolutely! Our designers can create furniture tailored to your preferences, materials, and room
+                    dimensions.
+                </div>
+            </div>
+
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <button class="faq-toggle">
+                    <span class="faq-question">What payment methods do you accept?</span>
+                    <span class="faq-arrow"></span>
+                </button>
+                <div class="faq-content">
+                    We accept cash, credit/debit cards, and mobile payments for your convenience.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="js/slideshow.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/scroll-reveal.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/button.js"></script>
+    <footer>
+        <div class="myfooter">
+            <div class="about">
+                <h2 style="margin-left: 7%; margin-top: 12px;" class="h2">About Us</h2>
+                <div class="paragraph">
+                    <p class="vertical-paragraph">Engaging in different furniture designing, repairing, making furniture
+                        of one's
+                        desire and offering tutorials based on the furniture.</p>
+                </div>
+            </div>
+
+            <div class="services">
+                <h2 style="margin-left: 3%;  margin-top: 0px;" class="h2">Our Services</h2>
+                <ul class="mylist">
+                    <li class="service-list"><a href="#" class="service-link">➤ Furniture repairing</a></li>
+                    <li class="service-list"><a href="#" class="service-link">➤ Furniture making</a></li>
+                    <li class="service-list"><a href="#" class="service-link">➤ Offering tutorials based on
+                            furniture</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h2 style="margin-left: 15%;" class="h2">Contact Us</h2>
+                <ul>
+                    <li class="contact-list">Email: <a href="mailto:furniture@gmail.com"
+                            class="contact-link">furniture@gmail.com</a></li>
+                    <li class="contact-list">Phone: <a href="tel:+255754452555" class="contact-link">+255754452555</a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2025 Furniture Explorer</p>
+                </div>
+                <div class="social-icons">
+                    <ul class="social-media">
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-tiktok"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

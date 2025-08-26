@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Living Room</title>
+  <style>
+    .living-room {
+      background-image: url('images/living.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px; /* Make sure the div has height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="living-room">
+    <h1>Our Living Room</h1>
+  </div>
+<script>
+  const text = "Welcome to Family Carpenter. We build furniture that makes your house feel like home.";
+let i = 0;
+let forward = true;
+const speed = 100; // typing speed in ms
+const eraseSpeed = 50; // erasing speed
+const pause = 1500; // pause before erasing
+
+function typeEffect() {
+  const element = document.getElementById("typewriter");
+
+  if (forward) {
+    // typing forward
+    if (i < text.length) {
+      element.innerHTML = text.substring(0, i + 1);
+      i++;
+      setTimeout(typeEffect, speed);
+    } else {
+      forward = false;
+      setTimeout(typeEffect, pause);
+    }
+  } else {
+    // erasing
+    if (i > 0) {
+      element.innerHTML = text.substring(0, i - 1);
+      i--;
+      setTimeout(typeEffect, eraseSpeed);
+    } else {
+      forward = true;
+      setTimeout(typeEffect, speed);
+    }
+  }
+}
+
